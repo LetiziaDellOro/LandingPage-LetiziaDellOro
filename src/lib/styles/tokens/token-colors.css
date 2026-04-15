@@ -1,0 +1,59 @@
+:root {
+	/* Default theme: dark (Figma-aligned) */
+	color-scheme: dark;
+
+	--color-background-primary: #131313;
+	--color-content-primary: #fafafa;
+	--color-content-secondary: #a5a4a6;
+	--color-link-default: #fafafa;
+	--color-filter-background-selected: #967fd1;
+	--color-filter-content-selected: #fafafa;
+	--icon-color: #ffffff;
+
+	/* Semantic aliases */
+	--page-bg: var(--color-background-primary);
+	--text-primary: var(--color-content-primary);
+	--text-secondary: var(--color-content-secondary);
+	--tab-active-bg: var(--color-filter-background-selected);
+	--tab-active-text: var(--color-filter-content-selected);
+}
+
+/* Manual theme override */
+:root[data-theme="light"] {
+	color-scheme: light;
+
+	--color-background-primary: #f8f7f4;
+	--color-content-primary: #171717;
+	--color-content-secondary: #646169;
+	--color-link-default: #171717;
+	--color-filter-background-selected: #6d57ac;
+	--color-filter-content-selected: #ffffff;
+	--icon-color: #171717;
+}
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+
+	--color-background-primary: #131313;
+	--color-content-primary: #fafafa;
+	--color-content-secondary: #a5a4a6;
+	--color-link-default: #fafafa;
+	--color-filter-background-selected: #967fd1;
+	--color-filter-content-selected: #fafafa;
+	--icon-color: #ffffff;
+}
+
+/* Automatic theme from OS preference unless a manual theme is set */
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme="dark"]):not([data-theme="light"]) {
+		color-scheme: light;
+
+		--color-background-primary: #f8f7f4;
+		--color-content-primary: #171717;
+		--color-content-secondary: #646169;
+		--color-link-default: #171717;
+		--color-filter-background-selected: #6d57ac;
+		--color-filter-content-selected: #ffffff;
+		--icon-color: #171717;
+	}
+}

@@ -1,0 +1,30 @@
+:root {
+	/* Font families */
+	--font-primary: "Bricolage Grotesque", sans-serif;
+	--font-secondary: "Eldwin Trial", "Times New Roman", serif;
+
+	/* Figma Unit variables */
+	--unit-24: 24px;
+	--unit-40: 40px;
+
+	/* Figma text styles */
+	--h1-font-family: var(--font-primary);
+	--h1-font-size: var(--unit-40);
+	--h1-font-weight: 500;
+	--h1-line-height: 1;
+	--h1-letter-spacing: 0;
+
+	--h2-font-family: var(--font-primary);
+	--h2-font-size: var(--unit-24);
+	--h2-font-weight: 500;
+	--h2-line-height: 1;
+	--h2-letter-spacing: 0;
+
+	--script-font-family: var(--font-secondary);
+	--script-font-size: var(--unit-24);
+	--script-font-weight: 300;
+	--script-line-height: 1;
+	--script-letter-spacing: 0;
+
+	font-feature-settings: "liga" 1, "calt" 1, "clig" 1, "kern" 1;
+}

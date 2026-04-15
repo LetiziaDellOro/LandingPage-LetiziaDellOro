@@ -1,6 +1,1 @@
-:root {
-    --font-primary: 'Bricolage+Grotesque', sans-serif;
-    --font-secondary: 'Bricolage+Grotesque', sans-serif;
-
-    font-feature-settings: "liga" 1, "calt" 1, "clig" 1, "kern" 1;
-}
+@import "token-typography.css";

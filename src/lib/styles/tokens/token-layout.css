@@ -1,0 +1,10 @@
+:root {
+	/* Layout primitives derived from the Desktop frame (browser mockup excluded) */
+	--layout-desktop-max-width: 1512px;
+	--layout-gutter-inline: var(--spacing-10);
+	--layout-section-gap: var(--spacing-7);
+	--layout-card-columns: 2;
+	--layout-card-gap: var(--spacing-5);
+	--layout-card-width: 664px;
+	--layout-card-media-aspect-ratio: 664 / 400;
+}

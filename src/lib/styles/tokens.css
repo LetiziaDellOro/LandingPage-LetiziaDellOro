@@ -1,1 +1,5 @@
-@import "tokens/typography.css";
+@import "tokens/token-colors.css";
+@import "tokens/token-layout.css";
+@import "tokens/token-radius.css";
+@import "tokens/token-spacing.css";
+@import "tokens/token-typography.css";
