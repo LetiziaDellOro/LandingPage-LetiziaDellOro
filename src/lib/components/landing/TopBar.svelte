@@ -3,10 +3,7 @@
 </script>
 
 <header class="topbar">
-	<div class="mark" aria-label="Site logo">
-		<span class="ring"></span>
-		<span class="tail"></span>
-	</div>
+	<img class="mark" src="/image/logo%20personale.svg" alt="Logo personale" />
 
 	<nav class="links" aria-label="Primary">
 		<a class="link script" href="#about">{aboutLabel}</a>
@@ -23,29 +20,10 @@
 	}
 
 	.mark {
-		position: relative;
-		width: 40px;
-		height: 40px;
-	}
-
-	.ring {
-		position: absolute;
-		inset: 6px;
-		border: 2px solid var(--text-primary);
-		border-radius: 999px;
-		opacity: 0.95;
-	}
-
-	.tail {
-		position: absolute;
-		width: 18px;
-		height: 2px;
-		background: var(--text-primary);
-		top: 24px;
-		left: 2px;
-		transform: rotate(-26deg);
-		transform-origin: left center;
-		border-radius: 2px;
+		display: block;
+		height: 44px;
+		width: auto;
+		object-fit: contain;
 	}
 
 	.links {
@@ -70,6 +48,10 @@
 		.topbar {
 			padding-inline: var(--spacing-4);
 			padding-block: var(--spacing-5);
+		}
+
+		.mark {
+			height: 38px;
 		}
 
 		.links {

@@ -4,27 +4,27 @@ label: Malawi
 cards:
   - title: Games in the Sun
     place: Malawi
-    image: https://images.unsplash.com/photo-1612418859795-8470574c46f2?auto=format&fit=crop&w=1400&q=80
+    image: /image/games%20in%20the%20sun.png
     alt: Children playing a handmade board game.
   - title: Red Dust
     place: Malawi
-    image: https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80
+    image: /image/red%20dust.png
     alt: A dancer in white on red earth.
   - title: Playground
     place: Malawi
-    image: https://images.unsplash.com/photo-1533310266094-8898a03807dd?auto=format&fit=crop&w=1400&q=80
+    image: /image/Playground.png
     alt: Children on swings in a sunny playground.
   - title: Safari
     place: Malawi
-    image: https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=1400&q=80
+    image: /image/safari.png
     alt: Elephant portrait in natural habitat.
   - title: Daily Work
     place: Malawi
-    image: https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=1400&q=80
+    image: /image/daily%20work.png
     alt: A rural doorway with hanging clothes.
   - title: Lake Malawi
     place: Malawi
-    image: https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80
+    image: /image/lake%20malawi.png
     alt: Group portrait on rocks by the lake.
 ---
 

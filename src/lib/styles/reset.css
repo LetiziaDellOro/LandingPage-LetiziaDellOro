@@ -35,6 +35,8 @@ html {
 	line-height: 1.15; /* 2 */
 	-webkit-text-size-adjust: 100%; /* 3 */
 	tab-size: 4; /* 4 */
+	background: var(--page-bg);
+	color: var(--text-primary);
 }
 
 /*
@@ -48,6 +50,9 @@ Remove the margin in all browsers.
 
 body {
 	margin: 0;
+	min-height: 100vh;
+	background: var(--page-bg);
+	color: var(--text-primary);
 }
 
 /*

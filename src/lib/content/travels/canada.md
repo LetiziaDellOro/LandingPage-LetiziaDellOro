@@ -4,20 +4,28 @@ label: Canada
 cards:
   - title: Fog at Dawn
     place: Canada
-    image: https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1400&q=80
+    image: /image/vancouver%20city%20light.png
     alt: Pine forest in morning fog.
   - title: City Snow
     place: Canada
-    image: https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?auto=format&fit=crop&w=1400&q=80
+    image: /image/english%20bay%20low%20tide.png
     alt: Snowy city street at blue hour.
   - title: Glacier Water
     place: Canada
-    image: https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80
+    image: /image/victoria%27s%20sunset.png
     alt: Mountain lake with glacial tones.
   - title: Cedar Trail
     place: Canada
-    image: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80
+    image: /image/cliffside.png
     alt: Deep forest trail with tall trees.
+  - title: Lake Swim
+    place: Canada
+    image: /image/lake%20swim.png
+    alt: Swimmers near a calm lake shore.
+  - title: Friends in the Landscape
+    place: Canada
+    image: /image/landscape%20with%20friends.png
+    alt: Friends standing in an open landscape.
 ---
 
 Canada trip collection.
