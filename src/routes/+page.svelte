@@ -33,7 +33,6 @@
 <svelte:head>
 	<title>Travel Journal</title>
 </svelte:head>
-
 <main class="landing-page">
 	<TopBar aboutLabel={intro.aboutLabel} handle={intro.handle} />
 	<HeroIntro text={intro.intro} />

@@ -21,11 +21,11 @@
 		flex-direction: column;
 		gap: var(--spacing-2);
 	}
-
 	.media-wrap {
 		aspect-ratio: var(--layout-card-media-aspect-ratio);
 		overflow: hidden;
-		background: color-mix(in oklab, var(--page-bg), white 8%);
+		padding: 16px;
+		background: var(--color-filter-content-selected);
 	}
 
 	img {
@@ -33,11 +33,12 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		transition: transform 280ms ease;
+		transition: transform 280ms ease, filter 280ms ease;
 	}
 
 	.card:hover img {
-		transform: scale(1.03);
+		transform: scale(1.015);
+		filter: grayscale(100%);
 	}
 
 	.meta {
@@ -77,5 +78,14 @@
 		margin-left: auto;
 		color: var(--text-secondary);
 		font-size: 1.2rem;
+		display: inline-block;
+		opacity: 0;
+		transform: translateY(4px);
+		transition: transform 180ms ease, opacity 180ms ease;
+	}
+
+	.card:hover .arrow {
+		opacity: 1;
+		transform: translateY(-2px);
 	}
 </style>

@@ -1,12 +1,12 @@
 <script>
-	let { aboutLabel = 'About', handle = '@letydelloro' } = $props();
+	let { aboutHref = '/about', aboutLabel = 'About', handle = '@letydelloro' } = $props();
 </script>
 
 <header class="topbar">
 	<img class="mark" src="/image/logo%20personale.svg" alt="Logo personale" />
 
 	<nav class="links" aria-label="Primary">
-		<a class="link script" href="#about">{aboutLabel}</a>
+		<a class="link script" href={aboutHref}>{aboutLabel}</a>
 		<a class="link script" href="https://instagram.com/letydelloro" target="_blank" rel="noreferrer">{handle}</a>
 	</nav>
 </header>
@@ -35,11 +35,17 @@
 	.link {
 		color: var(--color-link-default);
 		text-decoration: none;
+		transition: color 180ms ease;
+	}
+
+	.link:hover,
+	.link:focus-visible {
+		color: var(--color-filter-background-selected);
 	}
 
 	.script {
 		font-family: var(--script-font-family);
-		font-size: clamp(1.1rem, 1.5vw, var(--script-font-size));
+		font-size: var(--unit-24);
 		font-weight: var(--script-font-weight);
 		line-height: var(--script-line-height);
 	}
@@ -56,6 +62,10 @@
 
 		.links {
 			gap: var(--spacing-4);
+		}
+
+		.script {
+			font-size: 20px;
 		}
 	}
 </style>

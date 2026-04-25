@@ -23,15 +23,23 @@
 	}
 
 	button {
+		appearance: none;
+		-webkit-appearance: none;
 		border: 0;
 		background: transparent;
+		box-sizing: border-box;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 		color: var(--text-primary);
 		padding: var(--spacing-2) var(--spacing-4);
 		border-radius: var(--radius-full);
-		font-family: var(--script-font-family);
-		font-size: clamp(1.05rem, 1.9vw, var(--script-font-size));
-		font-weight: var(--script-font-weight);
-		line-height: var(--script-line-height);
+		font-family: var(--font-primary);
+		font-size: var(--unit-24);
+		font-weight: 500;
+		line-height: 1;
+		letter-spacing: 0;
+		white-space: nowrap;
 		cursor: pointer;
 		transition: background-color 180ms ease, color 180ms ease;
 	}
@@ -39,6 +47,10 @@
 	button.active {
 		background: var(--tab-active-bg);
 		color: var(--tab-active-text);
+	}
+
+	button:not(.active):hover {
+		background: var(--color-filter-background-hover);
 	}
 
 	button:focus-visible {

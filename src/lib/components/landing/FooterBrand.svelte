@@ -1,24 +1,25 @@
-<footer class="footer">
-	<p>Politecnico di Milano</p>
+<footer class="footer" aria-label="Politecnico di Milano">
+	<img src="/image/Logo_Politecnico_Bianco%201.svg" alt="Politecnico di Milano" />
 </footer>
 
 <style>
 	.footer {
 		display: flex;
-		justify-content: flex-start;
-		padding: var(--spacing-6) var(--layout-gutter-inline);
+		justify-content: center;
+		padding: var(--spacing-6) var(--layout-gutter-inline) var(--spacing-8);
 	}
 
-	.footer p {
-		margin: 0;
-		color: var(--text-secondary);
-		font-family: var(--h2-font-family);
-		font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+	.footer img {
+		display: block;
+		width: min(201px, 100%);
+		height: auto;
+		object-fit: contain;
 	}
 
 	@media (max-width: 900px) {
 		.footer {
 			padding-inline: var(--spacing-4);
+			padding-bottom: var(--spacing-7);
 		}
 	}
 </style>
