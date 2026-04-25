@@ -38,7 +38,7 @@
 	}
 
 	.card:hover img {
-		transform: scale(0.60);
+		transform: scale(0.94);
 		filter: grayscale(100%);
 	}
 
