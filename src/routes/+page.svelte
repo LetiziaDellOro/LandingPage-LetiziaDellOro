@@ -88,7 +88,7 @@
 	.content {
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-5);
+		gap: var(--spacing-7);
 	}
 
 	.learn-more-wrap {

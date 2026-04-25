@@ -68,7 +68,7 @@
 		width: min(664px, 100%);
 		display: flex;
 		flex-direction: column;
-		gap: var(--spacing-2);
+		gap: var(--spacing-4);
 	}
 
 	.feature-card-media {
@@ -191,7 +191,7 @@
 		}
 
 		.feature-card {
-			gap: 10px;
+			gap: var(--spacing-4);
 		}
 
 		.feature-card-media {
