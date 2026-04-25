@@ -73,11 +73,13 @@
 		aspect-ratio: 664 / 400;
 		object-fit: cover;
 		background: color-mix(in oklab, var(--page-bg), white 8%);
-		transition: filter 280ms ease;
+		transform-origin: center;
+		transition: transform 280ms ease, filter 280ms ease;
 	}
 
 	.feature-card:hover img,
 	.feature-card:focus-within img {
+		transform: scale(0.98);
 		filter: grayscale(100%);
 	}
 

@@ -33,11 +33,12 @@
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		transform-origin: center;
 		transition: transform 280ms ease, filter 280ms ease;
 	}
 
 	.card:hover img {
-		transform: scale(1.015);
+		transform: scale(0.60);
 		filter: grayscale(100%);
 	}
 
