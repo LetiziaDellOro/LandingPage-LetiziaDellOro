@@ -21,7 +21,9 @@
 		<a class="back-link" href="/">Go back and check out my photos!</a>
 
 		<figure class="feature-card">
-			<img src="/image/about.png" alt="Letizia Dell'Oro at Primrose Hill in London" />
+			<div class="feature-card-media">
+				<img src="/image/about.png" alt="Letizia Dell'Oro at Primrose Hill in London" />
+			</div>
 			<figcaption>
 				<span class="location">Primrose Hill - London</span>
 				<span class="divider">/</span>
@@ -37,6 +39,8 @@
 			{/each}
 		</div>
 	</section>
+
+	<div class="footer-gap" aria-hidden="true"></div>
 
 	<FooterBrand />
 </main>
@@ -67,7 +71,12 @@
 		gap: var(--spacing-2);
 	}
 
-	.feature-card img {
+	.feature-card-media {
+		padding: var(--spacing-4);
+		background: var(--color-filter-content-selected);
+	}
+
+	.feature-card-media img {
 		display: block;
 		width: 100%;
 		aspect-ratio: 664 / 400;
@@ -79,6 +88,12 @@
 
 	.feature-card:hover img,
 	.feature-card:focus-within img {
+		transform: scale(0.98);
+		filter: grayscale(100%);
+	}
+
+	.feature-card:hover .feature-card-media img,
+	.feature-card:focus-within .feature-card-media img {
 		transform: scale(0.98);
 		filter: grayscale(100%);
 	}
@@ -123,7 +138,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-3);
-		margin-bottom: calc(var(--spacing-14) * 10);
 		font-family: var(--h1-font-family);
 		font-size: var(--unit-24);
 		font-weight: var(--h1-font-weight);
@@ -155,6 +169,10 @@
 		color: var(--color-filter-background-selected);
 	}
 
+	.footer-gap {
+		flex: 0 0 clamp(180px, 20vw, 320px);
+	}
+
 	@media (max-width: 900px) {
 		.about-content {
 			padding: var(--spacing-8) var(--spacing-5) calc(var(--spacing-11) * 6 + var(--spacing-10) * 3);
@@ -176,6 +194,10 @@
 			gap: 10px;
 		}
 
+		.feature-card-media {
+			padding: var(--spacing-3);
+		}
+
 		.feature-card figcaption {
 			font-size: 20px;
 		}
@@ -187,7 +209,10 @@
 		.copy {
 			font-size: 20px;
 			line-height: 1.15;
-			margin-bottom: calc(var(--spacing-14) * 10);
+		}
+
+		.footer-gap {
+			flex-basis: clamp(140px, 18vw, 240px);
 		}
 
 		.back-link {
