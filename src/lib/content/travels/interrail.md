@@ -22,10 +22,6 @@ cards:
     place: Interrail
     image: /image/riverside%20-%20paris.png
     alt: Riverside buildings seen from the water.
-  - title: Reichstag - Berlin
-    place: Interrail
-    image: /image/reichstag%20-%20berlin.png
-    alt: Three friends posing near the Reichstag in Berlin.
 ---
 
 Interrail collection.

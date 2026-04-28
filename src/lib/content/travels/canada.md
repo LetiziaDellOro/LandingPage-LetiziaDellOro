@@ -22,10 +22,6 @@ cards:
     place: Canada
     image: /image/landscape%20with%20friends.png
     alt: Friends gathered on a lookout above the water.
-  - title: Victoria’s Sunset
-    place: Canada
-    image: /image/victoria%27s%20sunset.png
-    alt: Sunset over the water and hills.
 ---
 
 Canada trip collection.

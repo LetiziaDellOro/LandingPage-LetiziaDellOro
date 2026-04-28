@@ -22,10 +22,6 @@ cards:
     place: Malawi
     image: /image/daily%20work.png
     alt: A rural doorway with hanging clothes.
-  - title: Lake Malawi
-    place: Malawi
-    image: /image/lake%20malawi.png
-    alt: Group portrait on rocks by the lake.
 ---
 
 Malawi trip collection.

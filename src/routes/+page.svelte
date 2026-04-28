@@ -4,6 +4,8 @@
 	import TravelTabs from '$lib/components/landing/TravelTabs.svelte';
 	import PhotoGrid from '$lib/components/landing/PhotoGrid.svelte';
 	import FooterBrand from '$lib/components/landing/FooterBrand.svelte';
+	import PostcardPreview from '$lib/components/postcard/PostcardPreview.svelte';
+	import PostcardCreator from '$lib/components/postcard/PostcardCreator.svelte';
 
 	import { metadata as intro } from '$lib/content/landing/intro.md';
 	import { metadata as malawi } from '$lib/content/travels/malawi.md';
@@ -39,10 +41,20 @@
 	let activeSlug = $state(malawi.slug);
 	let activeCards = $derived(cardsByTravel[activeSlug] ?? []);
 	let activeLearnMore = $derived(learnMoreLinks[activeSlug] ?? null);
+	let showCreator = $state(false);
 
 	/** @param {string} slug */
 	const onSelectTab = (slug) => {
 		activeSlug = slug;
+		showCreator = false;
+	};
+
+	const openCreator = () => {
+		showCreator = true;
+	};
+
+	const closeCreator = () => {
+		showCreator = false;
 	};
 </script>
 
@@ -68,7 +80,14 @@
 				</a>
 			</div>
 		{/if}
-		<PhotoGrid cards={activeCards} />
+		{#if showCreator}
+			<PostcardCreator onBack={closeCreator} />
+		{:else}
+			<PhotoGrid
+				cards={activeCards}
+				featured={{ component: PostcardPreview, props: { onclick: openCreator } }}
+			/>
+		{/if}
 	</section>
 
 	<FooterBrand />

@@ -1,11 +1,15 @@
 <script>
 	import PhotoCard from './PhotoCard.svelte';
 
-	let { cards = [] } = $props();
+	let { cards = [], featured = null } = $props();
 </script>
 
 <section class="grid-wrap" aria-label="Travel photos">
 	<div class="grid">
+		{#if featured}
+			<featured.component {...(featured.props ?? {})} />
+		{/if}
+
 		{#each cards as card (card.title)}
 			<PhotoCard {card} />
 		{/each}
