@@ -73,7 +73,8 @@
 
 	.feature-card-media {
 		padding: var(--spacing-4);
-		background: var(--color-filter-content-selected);
+		background: var(--image-frame-surface);
+		border: 1px solid var(--image-frame-border);
 	}
 
 	.feature-card-media img {
@@ -150,7 +151,7 @@
 	}
 
 	.back-link {
-		color: var(--color-filter-content-selected);
+		color: var(--color-link-default);
 		font-family: var(--script-font-family);
 		font-size: var(--unit-24);
 		font-weight: 400;

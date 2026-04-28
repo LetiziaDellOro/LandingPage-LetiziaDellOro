@@ -8,6 +8,18 @@
 </script>
 
 <svelte:head>
+	<script>
+		(() => {
+			const storageKey = 'landing-theme';
+
+			try {
+				const savedTheme = localStorage.getItem(storageKey);
+				document.documentElement.dataset.theme = savedTheme === 'light' ? 'light' : 'dark';
+			} catch {
+				document.documentElement.dataset.theme = 'dark';
+			}
+		})();
+	</script>
 	<link rel="icon" href={favicon} />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />

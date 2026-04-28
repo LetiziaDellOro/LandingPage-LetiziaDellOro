@@ -47,7 +47,7 @@
 </script>
 
 <svelte:head>
-	<title>Travel Journal</title>
+	<title>Letizia's Travel Journall</title>
 </svelte:head>
 <main class="landing-page">
 	<TopBar aboutLabel={intro.aboutLabel} handle={intro.handle} />

@@ -10,6 +10,10 @@
 	--color-filter-background-selected: #967fd1;
 	--color-filter-content-selected: #fafafa;
 	--icon-color: #ffffff;
+	--brand-logo-filter: none;
+	--footer-logo-filter: none;
+	--image-frame-border: #fafafa;
+	--image-frame-surface: #fafafa;
 
 	/* Semantic aliases */
 	--page-bg: var(--color-background-primary);
@@ -30,7 +34,12 @@
 	--color-filter-background-hover: #e4e1e6;
 	--color-filter-background-selected: #6d57ac;
 	--color-filter-content-selected: #ffffff;
+	--color-link-default: #000000;
 	--icon-color: #171717;
+	--brand-logo-filter: brightness(0) saturate(100%) invert(57%) sepia(42%) saturate(631%) hue-rotate(210deg) brightness(92%) contrast(91%);
+	--footer-logo-filter: brightness(0);
+	--image-frame-border: #000000;
+	--image-frame-surface: #000000;
 }
 
 :root[data-theme="dark"] {
@@ -44,6 +53,10 @@
 	--color-filter-background-selected: #967fd1;
 	--color-filter-content-selected: #fafafa;
 	--icon-color: #ffffff;
+	--brand-logo-filter: none;
+	--footer-logo-filter: none;
+	--image-frame-border: #fafafa;
+	--image-frame-surface: #fafafa;
 }
 
 /* Automatic theme from OS preference unless a manual theme is set */
@@ -58,6 +71,11 @@
 		--color-filter-background-hover: #e4e1e6;
 		--color-filter-background-selected: #6d57ac;
 		--color-filter-content-selected: #ffffff;
+		--color-link-default: #000000;
 		--icon-color: #171717;
+		--brand-logo-filter: brightness(0) saturate(100%) invert(57%) sepia(42%) saturate(631%) hue-rotate(210deg) brightness(92%) contrast(91%);
+		--footer-logo-filter: brightness(0);
+		--image-frame-border: #000000;
+		--image-frame-surface: #000000;
 	}
 }

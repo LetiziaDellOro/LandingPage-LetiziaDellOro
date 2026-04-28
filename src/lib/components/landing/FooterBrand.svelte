@@ -14,6 +14,7 @@
 		width: min(201px, 100%);
 		height: auto;
 		object-fit: contain;
+		filter: var(--footer-logo-filter);
 	}
 
 	@media (max-width: 900px) {

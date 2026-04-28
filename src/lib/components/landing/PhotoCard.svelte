@@ -25,7 +25,8 @@
 		aspect-ratio: var(--layout-card-media-aspect-ratio);
 		overflow: hidden;
 		padding: 16px;
-		background: var(--color-filter-content-selected);
+		background: var(--image-frame-surface);
+		border: 1px solid var(--image-frame-border);
 	}
 
 	img {
